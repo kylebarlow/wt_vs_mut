@@ -30,425 +30,26 @@ amino_acids = {
 }
 
 blosum_62 = {
-        ('A', 'A') :  4,
-        ('A', 'R') : -1,
-        ('A', 'N') : -2,
-        ('A', 'D') : -2,
-        ('A', 'C') :  0,
-        ('A', 'Q') : -1,
-        ('A', 'E') : -1,
-        ('A', 'G') :  0,
-        ('A', 'H') : -2,
-        ('A', 'I') : -1,
-        ('A', 'L') : -1,
-        ('A', 'K') : -1,
-        ('A', 'M') : -1,
-        ('A', 'F') : -2,
-        ('A', 'P') : -1,
-        ('A', 'S') :  1,
-        ('A', 'T') :  0,
-        ('A', 'W') : -3,
-        ('A', 'Y') : -2,
-        ('A', 'V') :  0,
-
-        ('R', 'A') : -1,
-        ('R', 'R') :  5,
-        ('R', 'N') :  0,
-        ('R', 'D') : -2,
-        ('R', 'C') : -3,
-        ('R', 'Q') :  1,
-        ('R', 'E') :  0,
-        ('R', 'G') : -2,
-        ('R', 'H') :  0,
-        ('R', 'I') : -3,
-        ('R', 'L') : -2,
-        ('R', 'K') :  2,
-        ('R', 'M') : -1,
-        ('R', 'F') : -3,
-        ('R', 'P') : -2,
-        ('R', 'S') : -1,
-        ('R', 'T') : -1,
-        ('R', 'W') : -3,
-        ('R', 'Y') : -2,
-        ('R', 'V') : -3,
-
-        ('N', 'A') : -2,
-        ('N', 'R') :  0,
-        ('N', 'N') :  6,
-        ('N', 'D') :  1,
-        ('N', 'C') : -3,
-        ('N', 'Q') :  0,
-        ('N', 'E') :  0,
-        ('N', 'G') :  0,
-        ('N', 'H') :  1,
-        ('N', 'I') : -3,
-        ('N', 'L') : -3,
-        ('N', 'K') :  0,
-        ('N', 'M') : -2,
-        ('N', 'F') : -3,
-        ('N', 'P') : -2,
-        ('N', 'S') :  1,
-        ('N', 'T') :  0,
-        ('N', 'W') : -4,
-        ('N', 'Y') : -2,
-        ('N', 'V') : -3,
-
-        ('D', 'A') : -2,
-        ('D', 'R') : -2,
-        ('D', 'N') :  1,
-        ('D', 'D') :  6,
-        ('D', 'C') : -3,
-        ('D', 'Q') :  0,
-        ('D', 'E') :  2,
-        ('D', 'G') : -1,
-        ('D', 'H') : -1,
-        ('D', 'I') : -3,
-        ('D', 'L') : -4,
-        ('D', 'K') : -1,
-        ('D', 'M') : -3,
-        ('D', 'F') : -3,
-        ('D', 'P') : -1,
-        ('D', 'S') :  0,
-        ('D', 'T') : -1,
-        ('D', 'W') : -4,
-        ('D', 'Y') : -3,
-        ('D', 'V') : -3,
-
-        ('C', 'A') :  0,
-        ('C', 'R') : -3,
-        ('C', 'N') : -3,
-        ('C', 'D') : -3,
-        ('C', 'C') :  9,
-        ('C', 'Q') : -3,
-        ('C', 'E') : -4,
-        ('C', 'G') : -3,
-        ('C', 'H') : -3,
-        ('C', 'I') : -1,
-        ('C', 'L') : -1,
-        ('C', 'K') : -3,
-        ('C', 'M') : -1,
-        ('C', 'F') : -2,
-        ('C', 'P') : -3,
-        ('C', 'S') : -1,
-        ('C', 'T') : -1,
-        ('C', 'W') : -2,
-        ('C', 'Y') : -2,
-        ('C', 'V') : -1,
-
-        ('Q', 'A') : -1,
-        ('Q', 'R') :  1,
-        ('Q', 'N') :  0,
-        ('Q', 'D') :  0,
-        ('Q', 'C') : -3,
-        ('Q', 'Q') :  5,
-        ('Q', 'E') :  2,
-        ('Q', 'G') : -2,
-        ('Q', 'H') :  0,
-        ('Q', 'I') : -3,
-        ('Q', 'L') : -2,
-        ('Q', 'K') :  1,
-        ('Q', 'M') :  0,
-        ('Q', 'F') : -3,
-        ('Q', 'P') : -1,
-        ('Q', 'S') :  0,
-        ('Q', 'T') : -1,
-        ('Q', 'W') : -2,
-        ('Q', 'Y') : -1,
-        ('Q', 'V') : -2,
-
-        ('E', 'A') : -1,
-        ('E', 'R') :  0,
-        ('E', 'N') :  0,
-        ('E', 'D') :  2,
-        ('E', 'C') : -4,
-        ('E', 'Q') :  2,
-        ('E', 'E') :  5,
-        ('E', 'G') : -2,
-        ('E', 'H') :  0,
-        ('E', 'I') : -3,
-        ('E', 'L') : -3,
-        ('E', 'K') :  1,
-        ('E', 'M') : -2,
-        ('E', 'F') : -3,
-        ('E', 'P') : -1,
-        ('E', 'S') :  0,
-        ('E', 'T') : -1,
-        ('E', 'W') : -3,
-        ('E', 'Y') : -2,
-        ('E', 'V') : -2,
-
-        ('G', 'A') :  0,
-        ('G', 'R') : -2,
-        ('G', 'N') :  0,
-        ('G', 'D') : -1,
-        ('G', 'C') : -3,
-        ('G', 'Q') : -2,
-        ('G', 'E') : -2,
-        ('G', 'G') :  6,
-        ('G', 'H') : -2,
-        ('G', 'I') : -4,
-        ('G', 'L') : -4,
-        ('G', 'K') : -2,
-        ('G', 'M') : -3,
-        ('G', 'F') : -3,
-        ('G', 'P') : -2,
-        ('G', 'S') :  0,
-        ('G', 'T') : -2,
-        ('G', 'W') : -2,
-        ('G', 'Y') : -3,
-        ('G', 'V') : -3,
-
-        ('H', 'A') : -2,
-        ('H', 'R') :  0,
-        ('H', 'N') :  1,
-        ('H', 'D') : -1,
-        ('H', 'C') : -3,
-        ('H', 'Q') :  0,
-        ('H', 'E') :  0,
-        ('H', 'G') : -2,
-        ('H', 'H') :  8,
-        ('H', 'I') : -3,
-        ('H', 'L') : -3,
-        ('H', 'K') : -1,
-        ('H', 'M') : -2,
-        ('H', 'F') : -1,
-        ('H', 'P') : -2,
-        ('H', 'S') : -1,
-        ('H', 'T') : -2,
-        ('H', 'W') : -2,
-        ('H', 'Y') :  2,
-        ('H', 'V') : -3,
-
-        ('I', 'A') : -1,
-        ('I', 'R') : -3,
-        ('I', 'N') : -3,
-        ('I', 'D') : -3,
-        ('I', 'C') : -1,
-        ('I', 'Q') : -3,
-        ('I', 'E') : -3,
-        ('I', 'G') : -4,
-        ('I', 'H') : -3,
-        ('I', 'I') :  4,
-        ('I', 'L') :  2,
-        ('I', 'K') : -3,
-        ('I', 'M') :  1,
-        ('I', 'F') :  0,
-        ('I', 'P') : -3,
-        ('I', 'S') : -2,
-        ('I', 'T') : -1,
-        ('I', 'W') : -3,
-        ('I', 'Y') : -1,
-        ('I', 'V') :  3,
-
-        ('L', 'A') : -1,
-        ('L', 'R') : -2,
-        ('L', 'N') : -3,
-        ('L', 'D') : -4,
-        ('L', 'C') : -1,
-        ('L', 'Q') : -2,
-        ('L', 'E') : -3,
-        ('L', 'G') : -4,
-        ('L', 'H') : -3,
-        ('L', 'I') :  2,
-        ('L', 'L') :  4,
-        ('L', 'K') : -2,
-        ('L', 'M') :  2,
-        ('L', 'F') :  0,
-        ('L', 'P') : -3,
-        ('L', 'S') : -2,
-        ('L', 'T') : -1,
-        ('L', 'W') : -2,
-        ('L', 'Y') : -1,
-        ('L', 'V') :  1,
-
-        ('K', 'A') : -1,
-        ('K', 'R') :  2,
-        ('K', 'N') :  0,
-        ('K', 'D') : -1,
-        ('K', 'C') : -3,
-        ('K', 'Q') :  1,
-        ('K', 'E') :  1,
-        ('K', 'G') : -2,
-        ('K', 'H') : -1,
-        ('K', 'I') : -3,
-        ('K', 'L') : -2,
-        ('K', 'K') :  5,
-        ('K', 'M') : -1,
-        ('K', 'F') : -3,
-        ('K', 'P') : -1,
-        ('K', 'S') :  0,
-        ('K', 'T') : -1,
-        ('K', 'W') : -3,
-        ('K', 'Y') : -2,
-        ('K', 'V') : -2,
-
-        ('M', 'A') : -1,
-        ('M', 'R') : -1,
-        ('M', 'N') : -2,
-        ('M', 'D') : -3,
-        ('M', 'C') : -1,
-        ('M', 'Q') :  0,
-        ('M', 'E') : -2,
-        ('M', 'G') : -3,
-        ('M', 'H') : -2,
-        ('M', 'I') :  1,
-        ('M', 'L') :  2,
-        ('M', 'K') : -1,
-        ('M', 'M') :  5,
-        ('M', 'F') :  0,
-        ('M', 'P') : -2,
-        ('M', 'S') : -1,
-        ('M', 'T') : -1,
-        ('M', 'W') : -1,
-        ('M', 'Y') : -1,
-        ('M', 'V') :  1,
-
-        ('F', 'A') : -2,
-        ('F', 'R') : -3,
-        ('F', 'N') : -3,
-        ('F', 'D') : -3,
-        ('F', 'C') : -2,
-        ('F', 'Q') : -3,
-        ('F', 'E') : -3,
-        ('F', 'G') : -3,
-        ('F', 'H') : -1,
-        ('F', 'I') :  0,
-        ('F', 'L') :  0,
-        ('F', 'K') : -3,
-        ('F', 'M') :  0,
-        ('F', 'F') :  6,
-        ('F', 'P') : -4,
-        ('F', 'S') : -2,
-        ('F', 'T') : -2,
-        ('F', 'W') :  1,
-        ('F', 'Y') :  3,
-        ('F', 'V') : -1,
-
-        ('P', 'A') : -1,
-        ('P', 'R') : -2,
-        ('P', 'N') : -2,
-        ('P', 'D') : -1,
-        ('P', 'C') : -3,
-        ('P', 'Q') : -1,
-        ('P', 'E') : -1,
-        ('P', 'G') : -2,
-        ('P', 'H') : -2,
-        ('P', 'I') : -3,
-        ('P', 'L') : -3,
-        ('P', 'K') : -1,
-        ('P', 'M') : -2,
-        ('P', 'F') : -4,
-        ('P', 'P') :  7,
-        ('P', 'S') : -1,
-        ('P', 'T') : -1,
-        ('P', 'W') : -4,
-        ('P', 'Y') : -3,
-        ('P', 'V') : -2,
-
-        ('S', 'A') :  1,
-        ('S', 'R') : -1,
-        ('S', 'N') :  1,
-        ('S', 'D') :  0,
-        ('S', 'C') : -1,
-        ('S', 'Q') :  0,
-        ('S', 'E') :  0,
-        ('S', 'G') :  0,
-        ('S', 'H') : -1,
-        ('S', 'I') : -2,
-        ('S', 'L') : -2,
-        ('S', 'K') :  0,
-        ('S', 'M') : -1,
-        ('S', 'F') : -2,
-        ('S', 'P') : -1,
-        ('S', 'S') :  4,
-        ('S', 'T') :  1,
-        ('S', 'W') : -3,
-        ('S', 'Y') : -2,
-        ('S', 'V') : -2,
-
-        ('T', 'A') :  0,
-        ('T', 'R') : -1,
-        ('T', 'N') :  0,
-        ('T', 'D') : -1,
-        ('T', 'C') : -1,
-        ('T', 'Q') : -1,
-        ('T', 'E') : -1,
-        ('T', 'G') : -2,
-        ('T', 'H') : -2,
-        ('T', 'I') : -1,
-        ('T', 'L') : -1,
-        ('T', 'K') : -1,
-        ('T', 'M') : -1,
-        ('T', 'F') : -2,
-        ('T', 'P') : -1,
-        ('T', 'S') :  1,
-        ('T', 'T') :  5,
-        ('T', 'W') : -2,
-        ('T', 'Y') : -2,
-        ('T', 'V') :  0,
-
-        ('W', 'A') : -3,
-        ('W', 'R') : -3,
-        ('W', 'N') : -4,
-        ('W', 'D') : -4,
-        ('W', 'C') : -2,
-        ('W', 'Q') : -2,
-        ('W', 'E') : -3,
-        ('W', 'G') : -2,
-        ('W', 'H') : -2,
-        ('W', 'I') : -3,
-        ('W', 'L') : -2,
-        ('W', 'K') : -3,
-        ('W', 'M') : -1,
-        ('W', 'F') :  1,
-        ('W', 'P') : -4,
-        ('W', 'S') : -3,
-        ('W', 'T') : -2,
-        ('W', 'W') : 11,
-        ('W', 'Y') :  2,
-        ('W', 'V') : -3,
-
-        ('Y', 'A') : -2,
-        ('Y', 'R') : -2,
-        ('Y', 'N') : -2,
-        ('Y', 'D') : -3,
-        ('Y', 'C') : -2,
-        ('Y', 'Q') : -1,
-        ('Y', 'E') : -2,
-        ('Y', 'G') : -3,
-        ('Y', 'H') :  2,
-        ('Y', 'I') : -1,
-        ('Y', 'L') : -1,
-        ('Y', 'K') : -2,
-        ('Y', 'M') : -1,
-        ('Y', 'F') :  3,
-        ('Y', 'P') : -3,
-        ('Y', 'S') : -2,
-        ('Y', 'T') : -2,
-        ('Y', 'W') :  2,
-        ('Y', 'Y') :  7,
-        ('Y', 'V') : -1,
-
-        ('V', 'A') :  0,
-        ('V', 'R') : -3,
-        ('V', 'N') : -3,
-        ('V', 'D') : -3,
-        ('V', 'C') : -1,
-        ('V', 'Q') : -2,
-        ('V', 'E') : -2,
-        ('V', 'G') : -3,
-        ('V', 'H') : -3,
-        ('V', 'I') :  3,
-        ('V', 'L') :  1,
-        ('V', 'K') : -2,
-        ('V', 'M') :  1,
-        ('V', 'F') : -1,
-        ('V', 'P') : -2,
-        ('V', 'S') : -2,
-        ('V', 'T') :  0,
-        ('V', 'W') : -3,
-        ('V', 'Y') : -1,
-        ('V', 'V') :  4,
+        ('A', 'A') :  4, ('R', 'A') : -1, ('N', 'A') : -2, ('D', 'A') : -2, ('C', 'A') :  0, ('Q', 'A') : -1, ('E', 'A') : -1, ('G', 'A') :  0, ('H', 'A') : -2, ('I', 'A') : -1, ('L', 'A') : -1, ('K', 'A') : -1, ('M', 'A') : -1, ('F', 'A') : -2, ('P', 'A') : -1, ('S', 'A') :  1, ('T', 'A') :  0, ('W', 'A') : -3, ('Y', 'A') : -2, ('V', 'A') :  0,
+        ('A', 'R') : -1, ('R', 'R') :  5, ('N', 'R') :  0, ('D', 'R') : -2, ('C', 'R') : -3, ('Q', 'R') :  1, ('E', 'R') :  0, ('G', 'R') : -2, ('H', 'R') :  0, ('I', 'R') : -3, ('L', 'R') : -2, ('K', 'R') :  2, ('M', 'R') : -1, ('F', 'R') : -3, ('P', 'R') : -2, ('S', 'R') : -1, ('T', 'R') : -1, ('W', 'R') : -3, ('Y', 'R') : -2, ('V', 'R') : -3,
+        ('A', 'N') : -2, ('R', 'N') :  0, ('N', 'N') :  6, ('D', 'N') :  1, ('C', 'N') : -3, ('Q', 'N') :  0, ('E', 'N') :  0, ('G', 'N') :  0, ('H', 'N') :  1, ('I', 'N') : -3, ('L', 'N') : -3, ('K', 'N') :  0, ('M', 'N') : -2, ('F', 'N') : -3, ('P', 'N') : -2, ('S', 'N') :  1, ('T', 'N') :  0, ('W', 'N') : -4, ('Y', 'N') : -2, ('V', 'N') : -3,
+        ('A', 'D') : -2, ('R', 'D') : -2, ('N', 'D') :  1, ('D', 'D') :  6, ('C', 'D') : -3, ('Q', 'D') :  0, ('E', 'D') :  2, ('G', 'D') : -1, ('H', 'D') : -1, ('I', 'D') : -3, ('L', 'D') : -4, ('K', 'D') : -1, ('M', 'D') : -3, ('F', 'D') : -3, ('P', 'D') : -1, ('S', 'D') :  0, ('T', 'D') : -1, ('W', 'D') : -4, ('Y', 'D') : -3, ('V', 'D') : -3,
+        ('A', 'C') :  0, ('R', 'C') : -3, ('N', 'C') : -3, ('D', 'C') : -3, ('C', 'C') :  9, ('Q', 'C') : -3, ('E', 'C') : -4, ('G', 'C') : -3, ('H', 'C') : -3, ('I', 'C') : -1, ('L', 'C') : -1, ('K', 'C') : -3, ('M', 'C') : -1, ('F', 'C') : -2, ('P', 'C') : -3, ('S', 'C') : -1, ('T', 'C') : -1, ('W', 'C') : -2, ('Y', 'C') : -2, ('V', 'C') : -1,
+        ('A', 'Q') : -1, ('R', 'Q') :  1, ('N', 'Q') :  0, ('D', 'Q') :  0, ('C', 'Q') : -3, ('Q', 'Q') :  5, ('E', 'Q') :  2, ('G', 'Q') : -2, ('H', 'Q') :  0, ('I', 'Q') : -3, ('L', 'Q') : -2, ('K', 'Q') :  1, ('M', 'Q') :  0, ('F', 'Q') : -3, ('P', 'Q') : -1, ('S', 'Q') :  0, ('T', 'Q') : -1, ('W', 'Q') : -2, ('Y', 'Q') : -1, ('V', 'Q') : -2,
+        ('A', 'E') : -1, ('R', 'E') :  0, ('N', 'E') :  0, ('D', 'E') :  2, ('C', 'E') : -4, ('Q', 'E') :  2, ('E', 'E') :  5, ('G', 'E') : -2, ('H', 'E') :  0, ('I', 'E') : -3, ('L', 'E') : -3, ('K', 'E') :  1, ('M', 'E') : -2, ('F', 'E') : -3, ('P', 'E') : -1, ('S', 'E') :  0, ('T', 'E') : -1, ('W', 'E') : -3, ('Y', 'E') : -2, ('V', 'E') : -2,
+        ('A', 'G') :  0, ('R', 'G') : -2, ('N', 'G') :  0, ('D', 'G') : -1, ('C', 'G') : -3, ('Q', 'G') : -2, ('E', 'G') : -2, ('G', 'G') :  6, ('H', 'G') : -2, ('I', 'G') : -4, ('L', 'G') : -4, ('K', 'G') : -2, ('M', 'G') : -3, ('F', 'G') : -3, ('P', 'G') : -2, ('S', 'G') :  0, ('T', 'G') : -2, ('W', 'G') : -2, ('Y', 'G') : -3, ('V', 'G') : -3,
+        ('A', 'H') : -2, ('R', 'H') :  0, ('N', 'H') :  1, ('D', 'H') : -1, ('C', 'H') : -3, ('Q', 'H') :  0, ('E', 'H') :  0, ('G', 'H') : -2, ('H', 'H') :  8, ('I', 'H') : -3, ('L', 'H') : -3, ('K', 'H') : -1, ('M', 'H') : -2, ('F', 'H') : -1, ('P', 'H') : -2, ('S', 'H') : -1, ('T', 'H') : -2, ('W', 'H') : -2, ('Y', 'H') :  2, ('V', 'H') : -3,
+        ('A', 'I') : -1, ('R', 'I') : -3, ('N', 'I') : -3, ('D', 'I') : -3, ('C', 'I') : -1, ('Q', 'I') : -3, ('E', 'I') : -3, ('G', 'I') : -4, ('H', 'I') : -3, ('I', 'I') :  4, ('L', 'I') :  2, ('K', 'I') : -3, ('M', 'I') :  1, ('F', 'I') :  0, ('P', 'I') : -3, ('S', 'I') : -2, ('T', 'I') : -1, ('W', 'I') : -3, ('Y', 'I') : -1, ('V', 'I') :  3,
+        ('A', 'L') : -1, ('R', 'L') : -2, ('N', 'L') : -3, ('D', 'L') : -4, ('C', 'L') : -1, ('Q', 'L') : -2, ('E', 'L') : -3, ('G', 'L') : -4, ('H', 'L') : -3, ('I', 'L') :  2, ('L', 'L') :  4, ('K', 'L') : -2, ('M', 'L') :  2, ('F', 'L') :  0, ('P', 'L') : -3, ('S', 'L') : -2, ('T', 'L') : -1, ('W', 'L') : -2, ('Y', 'L') : -1, ('V', 'L') :  1,
+        ('A', 'K') : -1, ('R', 'K') :  2, ('N', 'K') :  0, ('D', 'K') : -1, ('C', 'K') : -3, ('Q', 'K') :  1, ('E', 'K') :  1, ('G', 'K') : -2, ('H', 'K') : -1, ('I', 'K') : -3, ('L', 'K') : -2, ('K', 'K') :  5, ('M', 'K') : -1, ('F', 'K') : -3, ('P', 'K') : -1, ('S', 'K') :  0, ('T', 'K') : -1, ('W', 'K') : -3, ('Y', 'K') : -2, ('V', 'K') : -2,
+        ('A', 'M') : -1, ('R', 'M') : -1, ('N', 'M') : -2, ('D', 'M') : -3, ('C', 'M') : -1, ('Q', 'M') :  0, ('E', 'M') : -2, ('G', 'M') : -3, ('H', 'M') : -2, ('I', 'M') :  1, ('L', 'M') :  2, ('K', 'M') : -1, ('M', 'M') :  5, ('F', 'M') :  0, ('P', 'M') : -2, ('S', 'M') : -1, ('T', 'M') : -1, ('W', 'M') : -1, ('Y', 'M') : -1, ('V', 'M') :  1,
+        ('A', 'F') : -2, ('R', 'F') : -3, ('N', 'F') : -3, ('D', 'F') : -3, ('C', 'F') : -2, ('Q', 'F') : -3, ('E', 'F') : -3, ('G', 'F') : -3, ('H', 'F') : -1, ('I', 'F') :  0, ('L', 'F') :  0, ('K', 'F') : -3, ('M', 'F') :  0, ('F', 'F') :  6, ('P', 'F') : -4, ('S', 'F') : -2, ('T', 'F') : -2, ('W', 'F') :  1, ('Y', 'F') :  3, ('V', 'F') : -1,
+        ('A', 'P') : -1, ('R', 'P') : -2, ('N', 'P') : -2, ('D', 'P') : -1, ('C', 'P') : -3, ('Q', 'P') : -1, ('E', 'P') : -1, ('G', 'P') : -2, ('H', 'P') : -2, ('I', 'P') : -3, ('L', 'P') : -3, ('K', 'P') : -1, ('M', 'P') : -2, ('F', 'P') : -4, ('P', 'P') :  7, ('S', 'P') : -1, ('T', 'P') : -1, ('W', 'P') : -4, ('Y', 'P') : -3, ('V', 'P') : -2,
+        ('A', 'S') :  1, ('R', 'S') : -1, ('N', 'S') :  1, ('D', 'S') :  0, ('C', 'S') : -1, ('Q', 'S') :  0, ('E', 'S') :  0, ('G', 'S') :  0, ('H', 'S') : -1, ('I', 'S') : -2, ('L', 'S') : -2, ('K', 'S') :  0, ('M', 'S') : -1, ('F', 'S') : -2, ('P', 'S') : -1, ('S', 'S') :  4, ('T', 'S') :  1, ('W', 'S') : -3, ('Y', 'S') : -2, ('V', 'S') : -2,
+        ('A', 'T') :  0, ('R', 'T') : -1, ('N', 'T') :  0, ('D', 'T') : -1, ('C', 'T') : -1, ('Q', 'T') : -1, ('E', 'T') : -1, ('G', 'T') : -2, ('H', 'T') : -2, ('I', 'T') : -1, ('L', 'T') : -1, ('K', 'T') : -1, ('M', 'T') : -1, ('F', 'T') : -2, ('P', 'T') : -1, ('S', 'T') :  1, ('T', 'T') :  5, ('W', 'T') : -2, ('Y', 'T') : -2, ('V', 'T') :  0,
+        ('A', 'W') : -3, ('R', 'W') : -3, ('N', 'W') : -4, ('D', 'W') : -4, ('C', 'W') : -2, ('Q', 'W') : -2, ('E', 'W') : -3, ('G', 'W') : -2, ('H', 'W') : -2, ('I', 'W') : -3, ('L', 'W') : -2, ('K', 'W') : -3, ('M', 'W') : -1, ('F', 'W') :  1, ('P', 'W') : -4, ('S', 'W') : -3, ('T', 'W') : -2, ('W', 'W') : 11, ('Y', 'W') :  2, ('V', 'W') : -3,
+        ('A', 'Y') : -2, ('R', 'Y') : -2, ('N', 'Y') : -2, ('D', 'Y') : -3, ('C', 'Y') : -2, ('Q', 'Y') : -1, ('E', 'Y') : -2, ('G', 'Y') : -3, ('H', 'Y') :  2, ('I', 'Y') : -1, ('L', 'Y') : -1, ('K', 'Y') : -2, ('M', 'Y') : -1, ('F', 'Y') :  3, ('P', 'Y') : -3, ('S', 'Y') : -2, ('T', 'Y') : -2, ('W', 'Y') :  2, ('Y', 'Y') :  7, ('V', 'Y') : -1,
+        ('A', 'V') :  0, ('R', 'V') : -3, ('N', 'V') : -3, ('D', 'V') : -3, ('C', 'V') : -1, ('Q', 'V') : -2, ('E', 'V') : -2, ('G', 'V') : -3, ('H', 'V') : -3, ('I', 'V') :  3, ('L', 'V') :  1, ('K', 'V') : -2, ('M', 'V') :  1, ('F', 'V') : -1, ('P', 'V') : -2, ('S', 'V') : -2, ('T', 'V') :  0, ('W', 'V') : -3, ('Y', 'V') : -1, ('V', 'V') :  4,
 }
 
 
@@ -460,7 +61,6 @@ class WildtypeVsMutant (Wizard):
 
     def __init__(self, wildtype_obj='', mutant_obj='', focus_sele=''):
         self.mutations = []
-        self.active_environments = []
         self.active_mutations = []
         self.aligned_seqs = '', ''
         self.aligned_resis = [], []
@@ -480,18 +80,29 @@ class WildtypeVsMutant (Wizard):
         self.set_mutant_object(mutant_obj)
 
     def set_wildtype_object(self, wildtype_obj):
+        """
+        Specify which object should be considered the "wildtype".
+        """
         self.wildtype_obj = wildtype_obj
-        self.active_prompt = ''; self.redraw()
+        self.active_prompt = ''
         self.update_mutation_list()
 
     def set_mutant_object(self, mutant_obj):
+        """
+        Specify which object should be considered the "mutant".
+        """
         self.mutant_obj = mutant_obj
-        self.active_prompt = ''; self.redraw()
+        self.active_prompt = ''
         self.update_mutation_list()
 
     def set_focus_sele(self, focus_sele):
+        """
+        Specify which atoms the user is interested in comparing.  For example, 
+        if the given selection comprises the interface between two proteins, 
+        the rest of the wizard will only consider mutations in that region.
+        """
         self.focus_sele = focus_sele
-        self.active_prompt = ''; self.redraw()
+        self.active_prompt = ''
         self.update_mutation_list()
 
     def update_mutation_list(self):
@@ -501,7 +112,6 @@ class WildtypeVsMutant (Wizard):
         sequences are aligned (using the Nedleman-Wunsch algorithm) before they
         being compared.
         """
-
         if not self.wildtype_obj or not self.mutant_obj:
             return
 
@@ -569,7 +179,7 @@ class WildtypeVsMutant (Wizard):
 
         # Automatically zoom in on the first mutation.
 
-        self.cycle()
+        self.show_next_mutation()
 
     def set_active_mutation(self, index):
         """
@@ -616,10 +226,11 @@ class WildtypeVsMutant (Wizard):
     def get_next_mutation(self):
         """
         Return the index of the next mutation.  The index is relative to the
-        sequence alignment. Resets to first mutation if multiple mutations are active.
+        sequence alignment. Resets to first mutation if multiple mutations are 
+        active.
         """
         if not self.mutations:
-            return None
+            raise IndexError
 
         if len(self.active_mutations) == 1:
             index = self.mutations.index(self.active_mutations[0]) + 1
@@ -631,7 +242,7 @@ class WildtypeVsMutant (Wizard):
         """
         Return the name of given mutation.  The `muti' parameter is an index
         into the sequence alignment that defaults to the currently active
-        mutation.  The names are formatted like so:
+        mutation.  The returned name will be formatted like so:
 
         Mutation:  D38E
         Insertion: -38E
@@ -670,33 +281,84 @@ class WildtypeVsMutant (Wizard):
         return return_string
 
     def get_panel(self):
+        """
+        Return a list of lists describing the entries that should appear in the 
+        right-hand panel of the GUI (below all the selections) when the wizard 
+        is running.  The first few entries control common actions and basic 
+        settings.  The remaining entries are buttons that the user can press to 
+        see specific mutations.
+        """
+
+        # Each entry is described by a list with 3 elements.  The first element 
+        # is a number that specifies the type of entry: 1 for text, 2 for a 
+        # button, 3 for a menu.  The second element is the text that will be 
+        # seen by the user.  The third element is an argument that means 
+        # different things for each type of entry.  For buttons, it's a piece 
+        # of code (given as a string) that should be executed when the button 
+        # is pressed.  For menus, it's a "tag" that can be passed to get_menu()
+        # to get a description of the menu in question.
+
+        # If the user hasn't provided wildtype and mutant objects yet, then 
+        # get_prompt() should be leading them through the process of doing 
+        # that.  Until then, just display the name of the wizard and the option 
+        # to quit.
+
         if not self.mutant_obj or not self.wildtype_obj:
             return [
-                [1, 'Wildtype vs Mutant Wizard', ''],
-                [2, 'Cancel', 'cmd.get_wizard().cleanup()'],
+                [1, "Wildtype vs Mutant Wizard", ''],
+                [2, "Cancel", 'cmd.get_wizard().cleanup()'],
             ]
 
+        # If the user has provided wildtype and mutant objects, but no 
+        # mutations were found, show an error message.
+
+        if not self.mutations:
+            from textwrap import wrap
+            return [
+                [1, "Wildtype vs Mutant Wizard", ''],
+            ] + [
+                [1, '\\900' + x, '']
+                for x in wrap("No mutations found.  Do `{0}' and `{1}' have the same sequence?".format(self.wildtype_obj, self.mutant_obj), 26)
+            ] + [
+                [2, "Cancel", 'cmd.get_wizard().cleanup()'],
+            ]
+
+        # Make the buttons and menus that control the basic actions and 
+        # settings that don't depend on the specific system being studied.
+
         buttons = [
-            [1, 'Wildtype vs Mutant Wizard', ''],
-            [2, 'View next mutation', 'cmd.get_wizard().cycle()'],
-            [2, 'Show all mutations', 'cmd.get_wizard().show_all_mutations()'],
-            [3, 'Wildtype highlight: {}'.format(self.wildtype_hilite), 'wt_hilite'],
-            [3, 'Mutant highlight: {}'.format(self.mutant_hilite), 'mut_hilite'],
-            [3, 'Neighbor radius: {0:.1f}A'.format(self.neighbor_radius), 'radius'],
-            [3, 'Zoom padding: {0:.1f}A'.format(self.zoom_padding), 'padding'],
-            [3, 'Polar hydrogens: {}'.format('show' if self.show_polar_h else 'hide'), 'hydrogen'],
+            [1, "Wildtype vs Mutant Wizard", ''],
+            [2, "Show next mutation", 'cmd.get_wizard().show_next_mutation()'],
+            [2, "Show all mutations", 'cmd.get_wizard().show_all_mutations()'],
+            [3, "Wildtype highlight: {}".format(self.wildtype_hilite), 'wt_hilite'],
+            [3, "Mutant highlight: {}".format(self.mutant_hilite), 'mut_hilite'],
+            [3, "Neighbor radius: {0:.1f}A".format(self.neighbor_radius), 'radius'],
+            [3, "Zoom padding: {0:.1f}A".format(self.zoom_padding), 'padding'],
+            [3, "Polar hydrogens: {}".format('show' if self.show_polar_h else 'hide'), 'hydrogen'],
         ]
+
+        # Make a button for each mutation.  The user can click on these buttons 
+        # to view specific mutations.  The button text turns green if the user 
+        # is currently viewing the associated mutation.
 
         for muti in self.mutations:
             command = 'cmd.get_wizard().set_active_mutation({})'
             name = self.get_mutation_name(muti)
-            if muti in self.active_mutations: name += ' <--'
+            if muti in self.active_mutations:
+                name = '\\090' + name
             buttons += [[2, name, command.format(muti)]]
 
-        buttons += [[2, 'Done', 'cmd.get_wizard().cleanup()']]
+        # Make a quit button and return the buttons data structure.
+
+        buttons += [[2, "Done", 'cmd.get_wizard().cleanup()']]
         return buttons
 
     def get_menu(self, tag):
+        """
+        Return a dictionary describing the entries in the menu associated with 
+        the given tag.  These tags come from get_panel(), so each menu is 
+        associated with one buttons on the right-hand side of the GUI.
+        """
         menus = {
             'wt_hilite': [[2, 'Highlight Color', '']],
             'mut_hilite': [[2, 'Highlight Color', '']],
@@ -726,7 +388,7 @@ class WildtypeVsMutant (Wizard):
                 'cmd.get_wizard().set_mutant_hilite("{}")'.format(color[4:])]]
 
         # Define the neighbor radius menu.
-        for radius in range(1, 11):
+        for radius in range(11):
             menus['radius'] += [[
                 1, '{0:0.1f}A'.format(radius),
                 'cmd.get_wizard().set_neighbor_radius({})'.format(radius)]]
@@ -747,11 +409,18 @@ class WildtypeVsMutant (Wizard):
         return menus[tag]
 
     def get_prompt(self):
+        """
+        Return text to be displayed in the top left corner of the view area.
+        If the user has not yet provided wildtype and mutant objects, prompt 
+        for that.  Otherwise, tell the user about the <Ctrl-Space> hotkey.
+        """
         # The \999 code changes the text color to white.
         if not self.wildtype_obj:
             return ["Select the wildtype object: \\999{}".format(self.active_prompt)]
         elif not self.mutant_obj:
             return ["Select the mutant object: \\999{}".format(self.active_prompt)]
+        elif not self.mutations:
+            return
         else:
             return ["Press <Ctrl-Space> to view the next mutation..."]
 
@@ -759,12 +428,12 @@ class WildtypeVsMutant (Wizard):
         """
         Take responsibility for handling key presses.
         """
-        # If the user presses Ctrl-Space (key, mod == 0, 2) cycle to the next
+        # If the user presses Ctrl-Space (key, mod == 0, 2), show the next
         # mutation.  Otherwise let pymol handle the key press.
 
         if self.wildtype_obj and self.mutant_obj:
             if (key, mod) == (0, 2):
-                self.cycle()
+                self.show_next_mutation()
             else:
                 return 0
 
@@ -790,92 +459,112 @@ class WildtypeVsMutant (Wizard):
     def get_event_mask(self):
         return Wizard.event_mask_key
 
-    def cycle(self):
+    def show_next_mutation(self):
         """
         Focus on the next mutant, or close the wizard if the last mutant is
         currently active.
         """
-        try: self.set_active_mutation(self.get_next_mutation())
-        except IndexError: self.cleanup()
+        try:
+            self.set_active_mutation(self.get_next_mutation())
+        except IndexError:
+            self.cleanup() if self.mutations else self.redraw()
+
+    def show_all_mutations(self):
+        """
+        Show all the mutations simultaneously.
+        """
+        self.active_mutations = self.mutations
+        self.redraw()
 
     def redraw(self):
         """
-        Highlight the sidechains around the current mutation.  Everything this
-        method adds to the scene is put in its own object, so that it can be
-        easily undone by the next call to redraw() or cleanup().
+        Highlight the sidechains around the active mutation(s).  Everything 
+        this method adds to the scene is put in its own object, so that it can 
+        be easily undone by the next call to redraw() or cleanup().
         """
         cmd.refresh_wizard()
+        if not self.active_mutations:
+            return
 
-        self.delete_active_environments()
+        wt_obj = self.wildtype_obj
+        mut_obj = self.mutant_obj
+
+        # wt_seles and mut_seles: lists containing individual pymol selection 
+        # expressions for each residue that the user wants to see.
+
+        wt_seles = []
+        mut_seles = []
 
         for muti in self.active_mutations:
-            wt_obj = self.wildtype_obj
             wt_resi, wt_chain = self.aligned_resis[0][muti]
-            wt_sele = 'none' if wt_resi is None else \
-                      'resi {} and chain {}'.format(wt_resi, wt_chain)
-            mut_obj = self.mutant_obj
             mut_resi, mut_chain = self.aligned_resis[1][muti]
-            mut_sele = 'none' if mut_resi is None else \
-                      'resi {} and chain {}'.format(mut_resi, mut_chain)
-            h_sele = (
-                    '(elem H and (neighbor elem C))' if self.show_polar_h else
-                    '(elem H)')
-            env_sele = (
-                    '(byres {{}} within {self.neighbor_radius} of '
-                    '(({wt_obj} and {wt_sele}) or ({mut_obj} and {mut_sele}))) '
-                    'and not {h_sele}'.format(**locals()))
+            if wt_resi is not None:
+                wt_seles.append('(resi {wt_resi} and chain {wt_chain})'.format(**locals()))
+            if mut_resi is not None:
+                mut_seles.append('(resi {mut_resi} and chain {mut_chain})'.format(**locals()))
 
-            initial_view = cmd.get_view()
+        # wt_sele and mut_sele: Pymol selection expressions that combine all 
+        # the individual selections in wt_seles and mut_seles.
 
-            if len(self.active_mutations) > 1:
-                wt_env_name = 'wt_env_' + self.get_mutation_name(muti)
-                mut_env_name = 'mut_env_' + self.get_mutation_name(muti)
-            else:
-                wt_env_name = 'wt_env'
-                mut_env_name = 'mut_env'
+        wt_sele = '({})'.format(' or '.join(wt_seles)) if wt_seles else 'none'
+        mut_sele = '({})'.format(' or '.join(mut_seles)) if mut_seles else 'none'
 
-            self.create_environment(wt_env_name, env_sele.format(wt_obj))
-            self.create_environment(mut_env_name, env_sele.format(mut_obj))
-            self.draw_self_self_hbonds(mut_env_name)
-            self.draw_self_self_hbonds(wt_env_name, start_displayed = False)
-            if self.wildtype_hilite != 'none':
-                cmd.color(self.wildtype_hilite, '{wt_env_name} and {wt_sele} and elem C'.format(**locals()))
-            if self.mutant_hilite != 'none':
-                cmd.color(self.mutant_hilite, '{mut_env_name} and {mut_sele} and elem C'.format(**locals()))
-            cmd.show_as('sticks', wt_env_name)
-            cmd.show_as('sticks', mut_env_name)
+        # env_sele: A pymol selection expression that specifies all which 
+        # residues are close enough to the mutation(s) to be considered part of 
+        # the "environment".  This selection is actually a template, and needs 
+        # to be formatted with either wt_obj or mut_obj before use.
 
-        if len(self.active_mutations) == 1:
-            cmd.set_view(initial_view)
-            cmd.zoom(wt_env_name, buffer=self.zoom_padding, animate=-1)
+        h_sele = (
+                '(elem H and (neighbor elem C))' if self.show_polar_h else
+                '(elem H)')
+        env_sele = (
+                '(byres {{}} within {self.neighbor_radius} of '
+                  '(({wt_obj} and {wt_sele}) or ({mut_obj} and {mut_sele})))'
+                'and not {h_sele}'.format(**locals()))
 
-    def create_environment(self, env_name, env):
-        """
-        Create a new environment in PyMOL, and keep track of it in member variable.
-        """
-        cmd.create(env_name, env)
-        self.active_environments.append(env_name)
+        # Render the scene into the wt_env, mut_env, wt_hbonds, and mut_hbonds 
+        # objects.  Limiting ourselves to these objects makes it easy to redraw 
+        # our comparisons without getting in the user's way, or vice versa.
 
-    def draw_self_self_hbonds(self, env_name, start_displayed = True):
-        hbonds_env_name = env_name + '_hbonds'
-        cmd.distance(hbonds_env_name, env_name, env_name, mode=2)
-        if not start_displayed:
-            cmd.disable(hbonds_env_name)
-        self.active_environments.append(hbonds_env_name)
+        initial_view = cmd.get_view()
 
-    def delete_active_environments(self):
-        """
-        Delete any created environments
-        """
-        for env in self.active_environments:
-            cmd.delete(env)
-        self.active_environments = []
+        cmd.delete('wt_env')
+        cmd.delete('mut_env')
+        cmd.delete('wt_hbonds')
+        cmd.delete('mut_hbonds')
+
+        cmd.create('wt_env', env_sele.format(wt_obj))
+        cmd.create('mut_env', env_sele.format(mut_obj))
+
+        # Hide the wildtype polar contacts by default, because I'm more often 
+        # interested in the contacts being made in the design.
+
+        cmd.distance('wt_hbonds', 'wt_env', 'wt_env', mode=2)
+        cmd.distance('mut_hbonds', 'mut_env', 'mut_env', mode=2)
+        cmd.disable('wt_hbonds')
+
+        cmd.show_as('sticks', 'wt_env')
+        cmd.show_as('sticks', 'mut_env')
+
+        if self.wildtype_hilite != 'none':
+            cmd.color(self.wildtype_hilite, 'wt_env and {wt_sele} and elem C'.format(**locals()))
+        if self.mutant_hilite != 'none':
+            cmd.color(self.mutant_hilite, 'mut_env and {mut_sele} and elem C'.format(**locals()))
+
+        # Pan smoothly to the new scene.
+
+        cmd.set_view(initial_view)
+        cmd.zoom('mut_env', buffer=self.zoom_padding, animate=-1)
 
     def cleanup(self):
         """
-        Remove any changes this wizard has made to the scene.
+        Remove any changes this wizard made to the user's session.
         """
-        self.delete_active_environments()
+        cmd.delete('wt_env')
+        cmd.delete('mut_env')
+        cmd.delete('wt_hbonds')
+        cmd.delete('mut_hbonds')
+
         cmd.set_view(self.original_view)
         cmd.set_wizard()
 
@@ -993,27 +682,17 @@ def find_mutations(alignment):
             if alignment[0][i] != alignment[1][i]
     ]
 
-def does_sele_exist(sele):
-    from types import ListType
-    session = cmd.get_session()
-    for i in session["names"]:
-        if type(i) is ListType:
-            if sele == i[0]:
-                return True
-    return False
-
 def get_score_from_matrix(pos1, pos2, score_matrix=blosum_62):
     """
-    Return score from score_matrix if it exists. Otherwise (as for non-canonicals),
-    return generic score values for matches and mismatches.
+    Return score from score_matrix if it exists. Otherwise (e.g. for 
+    non-canonicals), return generic score values for matches and 
+    mismatches.
     """
     try:
         return score_matrix[pos1, pos2]
     except KeyError:
-        if pos1 == pos2:
-            return 5
-        else:
-            return -4
+        return 5 if pos1 == pos2 else -4
+
 
 ## Add "wt_vs_mut" as pymol command
 cmd.extend('wt_vs_mut', wt_vs_mut)
@@ -1026,10 +705,10 @@ sys.modules['pymol.wizard.wt_vs_mut'] = sys.modules[__name__]
 ## Add item to plugin menu
 try:
     from pymol.plugins import addmenuitem
-    def __init_plugin__(self): # (no fold)
+    def __init_plugin__(self): #
         addmenuitem('Wildtype vs. Mutant', lambda s=self: wt_vs_mut())
 except:
-    def __init__(self): # (no fold)
+    def __init__(self): #
         self.menuBar.addmenuitem(
                 'Plugin', 'command', 'Wildtype vs. Mutant',
                 label='Wildtype vs. Mutant', command=lambda s=self: wt_vs_mut())
