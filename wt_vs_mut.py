@@ -67,7 +67,7 @@ class WildtypeVsMutant (Wizard):
         self.neighbor_radius = 4
         self.zoom_padding = 5
         self.wildtype_hilite = 'white'
-        self.mutant_hilite = 'yellow'
+        self.mutant_hilite = 'red'
         self.show_polar_h = False
         self.active_prompt = ''
         self.original_view = cmd.get_view()
@@ -97,8 +97,8 @@ class WildtypeVsMutant (Wizard):
 
     def set_focus_sele(self, focus_sele):
         """
-        Specify which atoms the user is interested in comparing.  For example, 
-        if the given selection comprises the interface between two proteins, 
+        Specify which atoms the user is interested in comparing.  For example,
+        if the given selection comprises the interface between two proteins,
         the rest of the wizard will only consider mutations in that region.
         """
         self.focus_sele = focus_sele
@@ -226,7 +226,7 @@ class WildtypeVsMutant (Wizard):
     def get_next_mutation(self):
         """
         Return the index of the next mutation.  The index is relative to the
-        sequence alignment. Resets to first mutation if multiple mutations are 
+        sequence alignment. Resets to first mutation if multiple mutations are
         active.
         """
         if not self.mutations:
@@ -270,9 +270,9 @@ class WildtypeVsMutant (Wizard):
                 resi, chain = self.aligned_resis[0][muti]; muti -= 1
 
             if i + 1 >= len(mutis):
-                format_string = '{}{}{}'
+                format_string = '{}{}->{}'
             else:
-                format_string = '{}{}{}, '
+                format_string = '{}{}->{}, '
 
             return_string += format_string.format(wildtype_res, resi, mutant_res)
 
@@ -282,25 +282,25 @@ class WildtypeVsMutant (Wizard):
 
     def get_panel(self):
         """
-        Return a list of lists describing the entries that should appear in the 
-        right-hand panel of the GUI (below all the selections) when the wizard 
-        is running.  The first few entries control common actions and basic 
-        settings.  The remaining entries are buttons that the user can press to 
+        Return a list of lists describing the entries that should appear in the
+        right-hand panel of the GUI (below all the selections) when the wizard
+        is running.  The first few entries control common actions and basic
+        settings.  The remaining entries are buttons that the user can press to
         see specific mutations.
         """
 
-        # Each entry is described by a list with 3 elements.  The first element 
-        # is a number that specifies the type of entry: 1 for text, 2 for a 
-        # button, 3 for a menu.  The second element is the text that will be 
-        # seen by the user.  The third element is an argument that means 
-        # different things for each type of entry.  For buttons, it's a piece 
-        # of code (given as a string) that should be executed when the button 
+        # Each entry is described by a list with 3 elements.  The first element
+        # is a number that specifies the type of entry: 1 for text, 2 for a
+        # button, 3 for a menu.  The second element is the text that will be
+        # seen by the user.  The third element is an argument that means
+        # different things for each type of entry.  For buttons, it's a piece
+        # of code (given as a string) that should be executed when the button
         # is pressed.  For menus, it's a "tag" that can be passed to get_menu()
         # to get a description of the menu in question.
 
-        # If the user hasn't provided wildtype and mutant objects yet, then 
-        # get_prompt() should be leading them through the process of doing 
-        # that.  Until then, just display the name of the wizard and the option 
+        # If the user hasn't provided wildtype and mutant objects yet, then
+        # get_prompt() should be leading them through the process of doing
+        # that.  Until then, just display the name of the wizard and the option
         # to quit.
 
         if not self.mutant_obj or not self.wildtype_obj:
@@ -309,7 +309,7 @@ class WildtypeVsMutant (Wizard):
                 [2, "Cancel", 'cmd.get_wizard().cleanup()'],
             ]
 
-        # If the user has provided wildtype and mutant objects, but no 
+        # If the user has provided wildtype and mutant objects, but no
         # mutations were found, show an error message.
 
         if not self.mutations:
@@ -323,7 +323,7 @@ class WildtypeVsMutant (Wizard):
                 [2, "Cancel", 'cmd.get_wizard().cleanup()'],
             ]
 
-        # Make the buttons and menus that control the basic actions and 
+        # Make the buttons and menus that control the basic actions and
         # settings that don't depend on the specific system being studied.
 
         buttons = [
@@ -337,8 +337,8 @@ class WildtypeVsMutant (Wizard):
             [3, "Polar hydrogens: {}".format('show' if self.show_polar_h else 'hide'), 'hydrogen'],
         ]
 
-        # Make a button for each mutation.  The user can click on these buttons 
-        # to view specific mutations.  The button text turns green if the user 
+        # Make a button for each mutation.  The user can click on these buttons
+        # to view specific mutations.  The button text turns green if the user
         # is currently viewing the associated mutation.
 
         for muti in self.mutations:
@@ -355,8 +355,8 @@ class WildtypeVsMutant (Wizard):
 
     def get_menu(self, tag):
         """
-        Return a dictionary describing the entries in the menu associated with 
-        the given tag.  These tags come from get_panel(), so each menu is 
+        Return a dictionary describing the entries in the menu associated with
+        the given tag.  These tags come from get_panel(), so each menu is
         associated with one buttons on the right-hand side of the GUI.
         """
         menus = {
@@ -411,7 +411,7 @@ class WildtypeVsMutant (Wizard):
     def get_prompt(self):
         """
         Return text to be displayed in the top left corner of the view area.
-        If the user has not yet provided wildtype and mutant objects, prompt 
+        If the user has not yet provided wildtype and mutant objects, prompt
         for that.  Otherwise, tell the user about the <Ctrl-Space> hotkey.
         """
         # The \999 code changes the text color to white.
@@ -478,8 +478,8 @@ class WildtypeVsMutant (Wizard):
 
     def redraw(self):
         """
-        Highlight the sidechains around the active mutation(s).  Everything 
-        this method adds to the scene is put in its own object, so that it can 
+        Highlight the sidechains around the active mutation(s).  Everything
+        this method adds to the scene is put in its own object, so that it can
         be easily undone by the next call to redraw() or cleanup().
         """
         cmd.refresh_wizard()
@@ -489,7 +489,7 @@ class WildtypeVsMutant (Wizard):
         wt_obj = self.wildtype_obj
         mut_obj = self.mutant_obj
 
-        # wt_seles and mut_seles: lists containing individual pymol selection 
+        # wt_seles and mut_seles: lists containing individual pymol selection
         # expressions for each residue that the user wants to see.
 
         wt_seles = []
@@ -503,15 +503,15 @@ class WildtypeVsMutant (Wizard):
             if mut_resi is not None:
                 mut_seles.append('(resi {mut_resi} and chain {mut_chain})'.format(**locals()))
 
-        # wt_sele and mut_sele: Pymol selection expressions that combine all 
+        # wt_sele and mut_sele: Pymol selection expressions that combine all
         # the individual selections in wt_seles and mut_seles.
 
         wt_sele = '({})'.format(' or '.join(wt_seles)) if wt_seles else 'none'
         mut_sele = '({})'.format(' or '.join(mut_seles)) if mut_seles else 'none'
 
-        # env_sele: A pymol selection expression that specifies all which 
-        # residues are close enough to the mutation(s) to be considered part of 
-        # the "environment".  This selection is actually a template, and needs 
+        # env_sele: A pymol selection expression that specifies all which
+        # residues are close enough to the mutation(s) to be considered part of
+        # the "environment".  This selection is actually a template, and needs
         # to be formatted with either wt_obj or mut_obj before use.
 
         h_sele = (
@@ -522,8 +522,8 @@ class WildtypeVsMutant (Wizard):
                   '(({wt_obj} and {wt_sele}) or ({mut_obj} and {mut_sele})))'
                 'and not {h_sele}'.format(**locals()))
 
-        # Render the scene into the wt_env, mut_env, wt_hbonds, and mut_hbonds 
-        # objects.  Limiting ourselves to these objects makes it easy to redraw 
+        # Render the scene into the wt_env, mut_env, wt_hbonds, and mut_hbonds
+        # objects.  Limiting ourselves to these objects makes it easy to redraw
         # our comparisons without getting in the user's way, or vice versa.
 
         initial_view = cmd.get_view()
@@ -536,7 +536,7 @@ class WildtypeVsMutant (Wizard):
         cmd.create('wt_env', env_sele.format(wt_obj))
         cmd.create('mut_env', env_sele.format(mut_obj))
 
-        # Hide the wildtype polar contacts by default, because I'm more often 
+        # Hide the wildtype polar contacts by default, because I'm more often
         # interested in the contacts being made in the design.
 
         cmd.distance('wt_hbonds', 'wt_env', 'wt_env', mode=2)
@@ -572,7 +572,7 @@ class WildtypeVsMutant (Wizard):
         """
         Draws all mutations simultaneously
         """
-        self.delete_active_environments()
+        self.cleanup()
         self.active_mutations = self.mutations
         self.redraw()
         cmd.set_view(self.original_view)
@@ -590,9 +590,9 @@ def get_sequence(selection):
     Return the protein sequence associated with the given object or selection.
     """
     sequence = collections.OrderedDict()
-    str_to_int = int; aa_table = amino_acids
+    aa_table = amino_acids
     sequence_builder = \
-            'sequence[str_to_int(resi), chain] = aa_table.get(resn, "X")'
+            'sequence[resi, chain] = aa_table.get(resn, "X")'
     cmd.iterate(selection, sequence_builder, space=locals())
     return sequence
 
@@ -684,8 +684,8 @@ def find_mutations(alignment):
 
 def get_score_from_matrix(pos1, pos2, score_matrix=blosum_62):
     """
-    Return score from score_matrix if it exists. Otherwise (e.g. for 
-    non-canonicals), return generic score values for matches and 
+    Return score from score_matrix if it exists. Otherwise (e.g. for
+    non-canonicals), return generic score values for matches and
     mismatches.
     """
     try:
